@@ -1,0 +1,24 @@
+\bibliography{bibliography/literature}
+
+\setkomafont{disposition}{\normalfont\bfseries} % use serif font for headings
+\linespread{1.05} % adjust line spread for mathpazo font
+
+% Settings for glossaries TODO: remove the following block if glossary not needed
+\renewcommand{\glsnamefont}[1]{\normalfont\bfseries #1} % use serif font for glossary entry titles
+\makeglossaries{}
+
+% Settings for pgfplots
+\pgfplotsset{compat=1.9} % TODO: adjust to your installed version
+\pgfplotsset{
+  % For available color names, see http://www.latextemplates.com/svgnames-colors
+  cycle list={CornflowerBlue\\Dandelion\\ForestGreen\\BrickRed\\},
+}
+
+% Settings for lstlistings
+\lstset{%
+  basicstyle=\ttfamily,
+  columns=fullflexible,
+  autogobble,
+  keywordstyle=\bfseries\color{MediumBlue},
+  stringstyle=\color{DarkGreen}
+}

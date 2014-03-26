@@ -1,0 +1,46 @@
+\RequirePackage[l2tabu, orthodox]{nag}
+
+% TODO: decide if one-sided/two-sided
+%\documentclass[headsepline,footsepline,footinclude=false,fontsize=11pt,paper=a4,listof=totoc,bibliography=totoc,BCOR=12mm,DIV=calc} % two-sided
+\documentclass[headsepline,footsepline,footinclude=false,oneside,fontsize=11pt,paper=a4,listof=totoc,bibliography=totoc]{scrbook} % one-sided
+
+\input{settings/packages}
+\input{settings/settings}
+\input{settings/commands}
+
+% TODO: remove if glossary not needed
+\input{glossary/terms}
+\input{glossary/acronyms}
+
+\begin{document}
+
+\input{pages/cover}
+
+\frontmatter{}
+
+\input{pages/title}
+\input{pages/disclaimer}
+\input{pages/acknowledgements}
+\input{pages/abstract}
+\microtypesetup{protrusion=false}
+\tableofcontents{}
+\microtypesetup{protrusion=true}
+
+\mainmatter{}
+
+\input{chapters/introduction}
+% TODO: add more chapters here
+
+\appendix{}
+
+ % TODO: remove if glossary not needed
+\glsaddall{} % add all defined terms to glossary, even if not referenced in text
+\printglossaries{}
+
+\microtypesetup{protrusion=false}
+\listoffigures{}
+\listoftables{}
+\microtypesetup{protrusion=true}
+\printbibliography{}
+
+\end{document}
