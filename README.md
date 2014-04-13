@@ -18,6 +18,8 @@ Comments & contributions welcome!
    * You can also use the provided Makefile, which will create a PDF in the `build` directory.
  * Look for `TODO` comments in the provided files. Start at `main.tex`.
 
+For additional hints, have a look at [the wiki][wiki].
+
 ## License
 
 [![Creative Commons License][license-image]][license]
@@ -30,5 +32,6 @@ This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0 Inter
 [mytum]: https://portal.mytum.de
 [mytum-logo-tum]: https://portal.mytum.de/corporatedesign/download/TUM_Logo/index_html
 [mytum-logo-faculty]: https://portal.mytum.de/corporatedesign/download/fakultaetslogos/index_html
+[wiki]: https://github.com/fwalch/tum-thesis-latex/wiki/
 [license]: https://creativecommons.org/licenses/by-sa/4.0/
 [license-image]: https://i.creativecommons.org/l/by-sa/4.0/88x31.png
