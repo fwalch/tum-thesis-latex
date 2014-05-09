@@ -1,13 +1,21 @@
 \PassOptionsToPackage{table,svgnames,dvipsnames}{xcolor}
 
 \usepackage[utf8]{inputenc}
-\usepackage[sc]{mathpazo}
 \usepackage[T1]{fontenc}
+\usepackage[sc]{mathpazo}
 \usepackage[american]{babel}
 \usepackage[autostyle]{csquotes}
-\usepackage[backend=biber,url=false,style=alphabetic,maxnames=4,minnames=3,maxbibnames=99,firstinits,uniquename=init]{biblatex} % TODO: adapt bibliography style
+\usepackage[%
+  backend=biber,
+  url=false,
+  style=alphabetic,
+  maxnames=4,
+  minnames=3,
+  maxbibnames=99,
+  firstinits,
+  uniquename=init]{biblatex} % TODO: adapt bibliography style
 \usepackage{graphicx}
-\usepackage{scrhack}
+\usepackage{scrhack} % necessary for listings package
 \usepackage{listings}
 \usepackage{lstautogobble}
 \usepackage{tikz}
@@ -18,4 +26,3 @@
 \usepackage{caption}
 \usepackage[hidelinks]{hyperref} % hidelinks removes colored boxes around references and links
 \usepackage[toc,nonumberlist,acronym]{glossaries} % TODO: remove if glossary not needed
-
