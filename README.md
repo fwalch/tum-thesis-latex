@@ -1,6 +1,8 @@
 # LaTeX template for TUM theses
 
-This is a LaTeX template created according to the [guidelines for TUM informatics theses][thesis-guidelines]. However, this might be useful for you even if you're a member of another faculty. See [`build/main.pdf`][sample-pdf] for an example PDF created with this template.
+This is a LaTeX template created according to the guidelines for TUM informatics theses in SS 2013. **Always check the [current formatting guidelines][thesis-guidelines] before you hand in.**
+
+If you're a member of another faculty, this might still be useful for you. See [`build/main.pdf`][sample-pdf] for an example PDF created with this template.
 
 Note: Because of copyright considerations, TUM logos are not included in this template and have to be downloaded separately.
 
