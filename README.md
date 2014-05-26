@@ -1,8 +1,6 @@
 # LaTeX template for TUM theses
 
-This is a LaTeX template created according to the guidelines for TUM informatics theses in SS 2013. **Always check the [current formatting guidelines][thesis-guidelines] before you hand in.**
-
-If you're a member of another faculty, this might still be useful for you. See [`build/main.pdf`][sample-pdf] for an example PDF created with this template.
+This is a LaTeX template created according to the guidelines for TUM informatics theses in SS 2013. **Always check the [current formatting guidelines][thesis-guidelines] before you hand in.** See [`build/main.pdf`][sample-pdf] for an example PDF created with this template.
 
 Note: Because of copyright considerations, TUM logos are not included in this template and have to be downloaded separately.
 
@@ -10,14 +8,13 @@ Comments & contributions welcome!
 
 ## Quickstart
 
- * [Download][template-download] and extract the template.
+ * [Download][template-download] and extract the template. If you prefer to use Git, just clone/fork the repository.
  * Download the TUM logos in PDF format:
    * Log in to [MyTUM][mytum].
    * Download the TUM logo from [here][mytum-logo-tum] and save it to `logos/tum.pdf`.
    * Download your faculty's logo from [here][mytum-logo-faculty] and save it to `logos/faculty.pdf`.
    * Some logos might not be cropped; execute the `crop-logos` script to do that for you.
- * Configure your latex editor to use `biber` for bibliography and `makeglossaries` for glossary generation. Set `main.tex` as the master document.
-   * You can also use the provided Makefile, which will create a PDF in the `build` directory.
+ * Configure your latex editor to use `pdflatex`, `biber` for bibliography, and `makeglossaries` for glossary generation. Set `main.tex` as the master document. Alternatively, you can use the provided makefile to create a PDF in the `build` directory.
  * Look for `TODO` comments in the provided files. Start at `main.tex`.
 
 For additional hints, have a look at [the wiki][wiki].
