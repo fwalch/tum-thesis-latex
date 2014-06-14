@@ -14,7 +14,7 @@ Comments & contributions welcome!
    * Download the TUM logo from [here][mytum-logo-tum] and save it to `logos/tum.pdf`.
    * Download your faculty's logo from [here][mytum-logo-faculty] and save it to `logos/faculty.pdf`.
    * Some logos might not be cropped; execute the `crop-logos` script to do that for you.
- * Configure your latex editor to use `pdflatex`, `biber` for bibliography, and `makeglossaries` for glossary generation. Set `main.tex` as the master document. Alternatively, you can use the provided makefile to create a PDF in the `build` directory.
+ * Configure your latex editor to use `pdflatex`, `biber` for bibliography, and `makeglossaries` for glossary generation. Set `main.tex` as the master document. Alternatively, you can use the provided makefile to create a PDF in the `build` directory (requires `latexmk`).
  * Look for `TODO` comments in the provided files. Start at `main.tex`.
 
 For additional hints, have a look at [the wiki][wiki].
