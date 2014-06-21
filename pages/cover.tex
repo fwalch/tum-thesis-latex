@@ -3,10 +3,9 @@
   % Adapted from Markus Kohm's KOMA-Script titlepage=firstiscover handling.
   % See http://mirrors.ctan.org/macros/latex/contrib/koma-script/scrkernel-title.dtx,
   % \maketitle macro.
-  \oddsidemargin=\dimexpr\coverpageleftmargin-1in\relax
-  \textwidth=\dimexpr
-  \paperwidth-\coverpageleftmargin-\coverpagerightmargin\relax
-  \hsize=\textwidth
+  \oddsidemargin=\evensidemargin\relax
+  \textwidth=\dimexpr\paperwidth-2\evensidemargin-2in\relax
+  \hsize=\textwidth\relax
 
   \centering
 
