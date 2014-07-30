@@ -2,7 +2,7 @@
 
 This is a LaTeX template created according to the guidelines for TUM informatics theses in SS 2013. **Always check the [current formatting guidelines][thesis-guidelines] before you hand in.** See [`build/main.pdf`][sample-pdf] for an example PDF created with this template.
 
-Note: Because of copyright considerations, TUM logos are not included in this template and have to be downloaded separately.
+Note: Because of copyright considerations, TUM logos are not included in this template and have to be downloaded separately (see instructions below).
 
 Comments & contributions welcome!
 
@@ -13,11 +13,11 @@ Comments & contributions welcome!
    * Log in to [MyTUM][mytum].
    * Download the TUM logo from [here][mytum-logo-tum] and save it to `logos/tum.pdf`.
    * Download your faculty's logo from [here][mytum-logo-faculty] and save it to `logos/faculty.pdf`.
-   * Some logos might not be cropped; execute the `crop-logos` script to do that for you.
+   * Some logos might not be cropped; execute the `crop-logos` script to do that for you. The script requires the `pdfcrop` tool (included in TeX Live/MiKTeX), so make sure your `PATH` environment variable is set accordingly.
  * Configure your latex editor to use `pdflatex`, `biber` for bibliography, and `makeglossaries` for glossary generation. Set `main.tex` as the master document. Alternatively, you can use the provided makefile to create a PDF in the `build` directory (requires `latexmk`).
  * Look for `TODO` comments in the provided files. Start at `main.tex`.
 
-For additional hints, have a look at [the wiki][wiki].
+For additional hints, have a look at [the wiki][wiki]. If you still have problems, feel free to [create an issue][issue].
 
 ## License
 
@@ -34,3 +34,4 @@ This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0 Inter
 [wiki]: https://github.com/fwalch/tum-thesis-latex/wiki/
 [license]: https://creativecommons.org/licenses/by-sa/4.0/
 [license-image]: https://i.creativecommons.org/l/by-sa/4.0/88x31.png
+[issue]: https://github.com/fwalch/tum-thesis-latex/issues
