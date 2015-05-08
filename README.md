@@ -29,7 +29,7 @@ This template is licensed under a [Creative Commons Attribution-ShareAlike 4.0 I
  * If you share the template or a modified (derived) version of it, you must attribute the template to the original authors ([Florian Walch and contributors][template-authors]) by providing a [link to the original template][template-url] and indicate if changes were made.
  * Any derived template has to use the [same][license] or a [compatible license][license-compatible].
 
- The license **applies only to the template**; there are no restrictions on the resulting PDF file or the contents of your thesis.
+The license **applies only to the template**; there are no restrictions on the resulting PDF file or the contents of your thesis.
 
 [issue]: https://github.com/fwalch/tum-thesis-latex/issues
 [license-compatible]: https://creativecommons.org/compatiblelicenses
