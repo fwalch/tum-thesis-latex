@@ -23,15 +23,24 @@ For additional hints, have a look at [the wiki][wiki]. If you still have problem
 
 [![Creative Commons License][license-image]][license]
 
-This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License][license].
+This template is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License][license], meaning that:
 
-[thesis-guidelines]: http://www.in.tum.de/en/current-students/administrative-matters/thesis-guidelines-and-topics.html
-[sample-pdf]: https://raw.github.com/fwalch/tum-thesis-latex/master/build/main.pdf
-[template-download]: https://github.com/fwalch/tum-thesis-latex/archive/master.zip
-[mytum]: https://portal.mytum.de
-[mytum-logo-tum]: https://portal.mytum.de/corporatedesign/download/TUM_Logo/index_html
-[mytum-logo-faculty]: https://portal.mytum.de/corporatedesign/download/fakultaetslogos/index_html
-[wiki]: https://github.com/fwalch/tum-thesis-latex/wiki/
-[license]: https://creativecommons.org/licenses/by-sa/4.0/
-[license-image]: https://i.creativecommons.org/l/by-sa/4.0/88x31.png
+ * You can share (copy, redistribute) and adapt (remix, transform, build upon) this template for any purpose, even commercially.
+ * If you share the template or a modified (derived) version of it, you must attribute the template to the original authors ([Florian Walch and contributors][template-authors]) by providing a [link to the original template][template-url] and indicate if changes were made.
+ * Any derived template has to use the [same][license] or a [compatible license][license-compatible].
+
+ The license **applies only to the template**; there are no restrictions on the resulting PDF file or the contents of your thesis.
+
 [issue]: https://github.com/fwalch/tum-thesis-latex/issues
+[license-compatible]: https://creativecommons.org/compatiblelicenses
+[license-image]: https://i.creativecommons.org/l/by-sa/4.0/88x31.png
+[license]: https://creativecommons.org/licenses/by-sa/4.0/
+[mytum-logo-faculty]: https://portal.mytum.de/corporatedesign/download/fakultaetslogos/index_html
+[mytum-logo-tum]: https://portal.mytum.de/corporatedesign/download/TUM_Logo/index_html
+[mytum]: https://portal.mytum.de
+[sample-pdf]: https://raw.github.com/fwalch/tum-thesis-latex/master/build/main.pdf
+[template-authors]: https://github.com/fwalch/tum-thesis-latex/graphs/contributors
+[template-download]: https://github.com/fwalch/tum-thesis-latex/archive/master.zip
+[template-url]: https://github.com/fwalch/tum-thesis-latex
+[thesis-guidelines]: http://www.in.tum.de/en/current-students/administrative-matters/thesis-guidelines-and-topics.html
+[wiki]: https://github.com/fwalch/tum-thesis-latex/wiki/
