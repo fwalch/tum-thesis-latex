@@ -25,7 +25,7 @@ For additional hints, have a look at [the wiki][wiki]. If you still have problem
 
 This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License][license].
 
-[thesis-guidelines]: http://www.in.tum.de/fuer-studierende/pruefungen-und-formalitaeten/abschlussarbeit.html
+[thesis-guidelines]: http://www.in.tum.de/en/current-students/administrative-matters/thesis-guidelines-and-topics.html
 [sample-pdf]: https://raw.github.com/fwalch/tum-thesis-latex/master/build/main.pdf
 [template-download]: https://github.com/fwalch/tum-thesis-latex/archive/master.zip
 [mytum]: https://portal.mytum.de
