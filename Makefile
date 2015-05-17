@@ -1,11 +1,14 @@
 FILE := main
 OUT  := build
 
-latexmk:
+pdf:
 	# Also see .latexmkrc
 	latexmk -outdir=$(OUT) -pdf $(FILE)
 
 clean:
+	rm -rf $(filter-out $(OUT)/$(FILE).pdf, $(wildcard $(OUT)/*))
+
+purge:
 	rm -rf $(OUT)
 
-.PHONY: latexmk clean
+.PHONY: latexmk clean purge
