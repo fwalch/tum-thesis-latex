@@ -6,7 +6,7 @@ Citation test~\parencite{latex}.
 \subsection{Subsection}
 See~\autoref{fig:sample}.
 
-\begin{figure}[htsb]
+\begin{figure}[htpb]
   \centering
   \includegraphics{logos/tum}
   \caption[Example figure]{An example for a figure.}\label{fig:sample}
@@ -16,7 +16,7 @@ See~\autoref{fig:sample}.
 
 See~\autoref{tab:sample}, \autoref{fig:sample-drawing}, \autoref{fig:sample-plot}, \autoref{fig:sample-listing}.
 
-\begin{table}[htsb]
+\begin{table}[htpb]
   \caption[Example table]{An example for a simple table.}\label{tab:sample}
   \centering
   \begin{tabular}{l l l l}
@@ -29,7 +29,7 @@ See~\autoref{tab:sample}, \autoref{fig:sample-drawing}, \autoref{fig:sample-plot
   \end{tabular}
 \end{table}
 
-\begin{figure}[htsb]
+\begin{figure}[htpb]
   \centering
   % This should probably go into a file in figures/
   \begin{tikzpicture}[node distance=3cm]
@@ -49,7 +49,7 @@ See~\autoref{tab:sample}, \autoref{fig:sample-drawing}, \autoref{fig:sample-plot
   \caption[Example drawing]{An example for a simple drawing.}\label{fig:sample-drawing}
 \end{figure}
 
-\begin{figure}[htsb]
+\begin{figure}[htpb]
   \centering
 
   \pgfplotstableset{col sep=&, row sep=\\}
@@ -85,7 +85,7 @@ See~\autoref{tab:sample}, \autoref{fig:sample-drawing}, \autoref{fig:sample-plot
   \caption[Example plot]{An example for a simple plot.}\label{fig:sample-plot}
 \end{figure}
 
-\begin{figure}[htsb]
+\begin{figure}[htpb]
   \centering
   \begin{tabular}{c}
   \begin{lstlisting}[language=SQL]
