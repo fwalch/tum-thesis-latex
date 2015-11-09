@@ -1,0 +1,9 @@
+sudo: false
+
+script:
+  - test ! -f main.pdf && latexmk -pdf && test -f main.pdf
+
+addons:
+  apt:
+    packages:
+      - texlive-full
