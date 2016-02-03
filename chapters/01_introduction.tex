@@ -15,6 +15,18 @@ See~\autoref{fig:sample}.
   \caption[Example figure]{An example for a figure.}\label{fig:sample}
 \end{figure}
 
+% example using vector graphics
+% command to convert svg to pdf: inkscape -D -z --file=image.svg --export-pdf=image.pdf --export-latex
+% put the created two files .pdf and .pdf_tex in ../figures dir
+% link: http://ctan.imsc.res.in/info/svg-inkscape/InkscapePDFLaTeX.pdf
+\begin{figure}[h]
+    \centering
+    \def\svgwidth{\columnwidth}
+    \input{figures/hellotum.pdf_tex}
+\caption{System Overview}
+\label{fig:overview}
+\end{figure}
+
 \section{Section}
 
 See~\autoref{tab:sample}, \autoref{fig:sample-drawing}, \autoref{fig:sample-plot}, \autoref{fig:sample-listing}.

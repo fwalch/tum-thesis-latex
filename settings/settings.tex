@@ -13,7 +13,9 @@
   % For available color names, see http://www.latextemplates.com/svgnames-colors
   cycle list={CornflowerBlue\\Dandelion\\ForestGreen\\BrickRed\\},
 }
-
+% specify the figure path, directs latexmk to correct directory
+% especially if you use vector images (svg to pdf) using inkscape
+\graphicspath{{./figures/}}
 % Settings for lstlistings
 \lstset{%
   basicstyle=\ttfamily,
