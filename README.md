@@ -8,16 +8,18 @@ Comments & contributions welcome!
 
 ## Quickstart
 
- * [Download][template-download] and extract the template. If you prefer to use Git, just clone/fork the repository.
- * Download the TUM logos in PDF format:
+ * [Download][template-download] and extract the template, or upload it to an online editor such as [Overleaf][overleaf] or [ShareLaTeX][sharelatex]. If you prefer to use Git, just clone/fork the repository.
+ * If your editor provides support for compiling LaTeX, set it up to use `pdflatex` and `biber`. Set the master document to `main.tex`. Alternatively, you can use the provided Makefile to generate a PDF in the `build` directory (requires `latexmk`).
+ * Look for `TODO` comments in the provided files. Start at `main.tex`.
+ * If you want to add TUM logos to the cover and title pages:
    * Log in to [MyTUM][mytum].
    * Download the TUM logo from [here][mytum-logo-tum] and save it to `logos/tum.pdf`.
    * Download your faculty's logo from [here][mytum-logo-faculty] and save it to `logos/faculty.pdf`.
    * Some logos might not be cropped; execute the `crop-logos` script to do that for you. The script requires the `pdfcrop` tool (included in TeX Live/MiKTeX), so make sure your `PATH` environment variable is set accordingly.
- * Configure your latex editor to use `pdflatex` and `biber`. Set `main.tex` as the master document. Alternatively, you can use the provided makefile to create a PDF in the `build` directory (requires `latexmk`).
- * Look for `TODO` comments in the provided files. Start at `main.tex`.
 
-For additional hints, have a look at [the wiki][wiki]. If you still have problems, feel free to [create an issue][issue].
+If you are new to LaTeX, the [ShareLaTeX knowledge base][sharelatex-kb] or the [LaTeX Wikibook][latex-wikibook] might help.
+
+For additional hints, have a look at [the wiki][wiki]. If you still have problems with the template, feel free to [create an issue][issue]. For general LaTeX questions, use [TeX StackExchange][tex-se].
 
 ## License
 
@@ -32,15 +34,20 @@ This template is licensed under a [Creative Commons Attribution-ShareAlike 4.0 I
 The license **applies only to the template**; there are no restrictions on the resulting PDF file or the contents of your thesis.
 
 [issue]: https://github.com/fwalch/tum-thesis-latex/issues
+[latex-wikibook]: https://en.wikibooks.org/wiki/LaTeX
 [license-compatible]: https://creativecommons.org/compatiblelicenses
 [license-image]: https://i.creativecommons.org/l/by-sa/4.0/88x31.png
 [license]: https://creativecommons.org/licenses/by-sa/4.0/
 [mytum-logo-faculty]: https://portal.mytum.de/corporatedesign/download/fakultaetslogos/index_html
 [mytum-logo-tum]: https://portal.mytum.de/corporatedesign/download/TUM_Logo/index_html
 [mytum]: https://portal.mytum.de
+[overleaf]: https://www.overleaf.com/
 [sample-pdf]: https://raw.github.com/fwalch/tum-thesis-latex/master/build/main.pdf
+[sharelatex-kb]: https://www.sharelatex.com/learn
+[sharelatex]: https://www.sharelatex.com/
 [template-authors]: https://github.com/fwalch/tum-thesis-latex/graphs/contributors
 [template-download]: https://github.com/fwalch/tum-thesis-latex/archive/master.zip
 [template-url]: https://github.com/fwalch/tum-thesis-latex
+[tex-se]: https://tex.stackexchange.com/
 [thesis-guidelines]: http://www.in.tum.de/en/current-students/administrative-matters/thesis-guidelines-and-topics.html
 [wiki]: https://github.com/fwalch/tum-thesis-latex/wiki/

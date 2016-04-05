@@ -9,7 +9,11 @@
 
   \centering
 
-  \includegraphics[width=40mm]{logos/tum.pdf}
+  \IfFileExists{logos/tum.pdf}{%
+    \includegraphics[height=20mm]{logos/tum.pdf}
+  }{%
+    \vspace*{20mm}
+  }
 
   \vspace{5mm}
   {\huge\MakeUppercase{\getFaculty{}}}\\
@@ -26,6 +30,8 @@
   \vspace{15mm}
   {\LARGE \getAuthor{}}
 
-  \vspace{20mm}
-  \includegraphics[width=20mm]{logos/faculty.pdf}
+  \IfFileExists{logos/faculty.pdf}{%
+    \vspace{20mm}
+    \includegraphics[height=20mm]{logos/faculty.pdf}
+  }{}
 \end{titlepage}
