@@ -13,7 +13,7 @@
   minnames=3,
   maxbibnames=99,
   firstinits,
-  uniquename=init]{biblatex} % TODO: adapt bibliography style
+  uniquename=init]{biblatex} % TODO: adapt citation style
 \usepackage{graphicx}
 \usepackage{scrhack} % necessary for listings package
 \usepackage{listings}
@@ -25,4 +25,25 @@
 \usepackage[final]{microtype}
 \usepackage{caption}
 \usepackage[hidelinks]{hyperref} % hidelinks removes colored boxes around references and links
-\usepackage[toc,nonumberlist,acronym]{glossaries} % TODO: remove if glossary not needed
+
+
+\bibliography{bibliography}
+
+\setkomafont{disposition}{\normalfont\bfseries} % use serif font for headings
+\linespread{1.05} % adjust line spread for mathpazo font
+
+% Settings for pgfplots
+\pgfplotsset{compat=1.9} % TODO: adjust to your installed version
+\pgfplotsset{
+  % For available color names, see http://www.latextemplates.com/svgnames-colors
+  cycle list={CornflowerBlue\\Dandelion\\ForestGreen\\BrickRed\\},
+}
+
+% Settings for lstlistings
+\lstset{%
+  basicstyle=\ttfamily,
+  columns=fullflexible,
+  autogobble,
+  keywordstyle=\bfseries\color{MediumBlue},
+  stringstyle=\color{DarkGreen}
+}

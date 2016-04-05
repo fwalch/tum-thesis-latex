@@ -4,13 +4,20 @@
 %\documentclass[headsepline,footsepline,footinclude=false,fontsize=11pt,paper=a4,listof=totoc,bibliography=totoc,BCOR=12mm,DIV=12]{scrbook} % two-sided
 \documentclass[headsepline,footsepline,footinclude=false,oneside,fontsize=11pt,paper=a4,listof=totoc,bibliography=totoc]{scrbook} % one-sided
 
-\input{settings/packages}
-\input{settings/settings}
-\input{settings/commands}
+% TODO: change citation style in settings
+\input{settings}
 
-% TODO: remove if glossary not needed
-\input{glossary/terms}
-\input{glossary/acronyms}
+% TODO: change thesis information
+\newcommand*{\getUniversity}{Technische Universität München}
+\newcommand*{\getFaculty}{Department of Informatics}
+\newcommand*{\getTitle}{Thesis title}
+\newcommand*{\getTitleGer}{Titel der Abschlussarbeit}
+\newcommand*{\getAuthor}{Author}
+\newcommand*{\getDoctype}{Thesis type (Bachelor's Thesis in Informatics, Master's Thesis in Robotics, \ldots)}
+\newcommand*{\getSupervisor}{Supervisor}
+\newcommand*{\getAdvisor}{Advisor}
+\newcommand*{\getSubmissionDate}{Submission date}
+\newcommand*{\getSubmissionLocation}{Munich}
 
 \begin{document}
 
@@ -35,10 +42,6 @@
 % TODO: add more chapters here
 
 \appendix{}
-
- % TODO: remove if glossary not needed
-\glsaddall{} % add all defined terms to glossary, even if not referenced in text
-\printglossaries{}
 
 \microtypesetup{protrusion=false}
 \listoffigures{}
