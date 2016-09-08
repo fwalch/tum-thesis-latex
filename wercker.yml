@@ -1,0 +1,20 @@
+latex-build:
+  box: algobardo/docker-latexmk
+  steps:
+    - script:
+      name: clean
+      code: make clean
+    - script:
+      name: LaTeX
+      code: make pdf
+pandoc-build:
+  box:
+    id: jpbernius/pandoc:v0.0.2
+    entrypoint: /bin/bash -c
+  steps:
+    - script:
+      name: clean
+      code: make clean
+    - script:
+      name: Pandoc
+      code: make pandoc

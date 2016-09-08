@@ -1,0 +1,57 @@
+\RequirePackage[l2tabu,orthodox]{nag}
+
+$if(oneside)$
+\documentclass[headsepline,footsepline,footinclude=false,oneside,fontsize=11pt,paper=a4,listof=totoc,bibliography=totoc,numbers=noenddot,appendixprefix]{scrbook} % one-sided
+$else$
+\documentclass[headsepline,footsepline,footinclude=false,fontsize=11pt,paper=a4,listof=totoc,bibliography=totoc,numbers=noenddot,appendixprefix,BCOR=12mm,DIV=12]{scrbook}
+$endif$
+
+\input{settings}
+
+$if(bibliography)$
+\bibliography{$for(bibliography)$$bibliography$$sep$,$endfor$}
+$endif$
+
+\usepackage{longtable,booktabs}
+
+
+\newcommand*{\getUniversity}{$if(university)$$university$$else$Technical University of Munich$endif$}
+\newcommand*{\getFaculty}{$if(faculty)$$faculty$$else$Department of Informatics$endif$}
+\newcommand*{\getTitle}{$title-en$}
+\newcommand*{\getTitleGer}{$title-de$}
+\newcommand*{\getAuthor}{$author$}
+\newcommand*{\getDoctype}{$thesis-type$}
+\newcommand*{\getSupervisor}{$supervisor$}
+\newcommand*{\getAdvisor}{$advisor$}
+\newcommand*{\getSubmissionDate}{$submission-date$}
+\newcommand*{\getSubmissionLocation}{$if(submission-location)$$submission-location$$else$Munich$endif$}
+
+% TUM Logo
+% (Taken from http://www11.in.tum.de/lehre/thesis/latex)
+\input{logos/tumlogo}
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\begin{document}
+
+% Set page numbering to avoid "destination with the same identifier has been already used" warning for cover page.
+% (see https://en.wikibooks.org/wiki/LaTeX/Hyperlinks#Problems_with_Links_and_Pages).
+\pagenumbering{alph}
+\input{pages/cover}
+
+\frontmatter{}
+
+\input{pages/title}
+\input{pages/disclaimer}
+\input{pages/acknowledgements}
+\input{pages/abstract}
+\microtypesetup{protrusion=false}
+\tableofcontents{}
+\microtypesetup{protrusion=true}
+
+\mainmatter{}
+
+$body$
+
+\end{document}
