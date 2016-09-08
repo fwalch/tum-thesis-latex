@@ -15,8 +15,8 @@ $endif$
 \usepackage{longtable,booktabs}
 
 
-\newcommand*{\getUniversity}{Technische Universität München}
-\newcommand*{\getFaculty}{Department of Informatics}
+\newcommand*{\getUniversity}{$if(university)$$university$$else$Technical University of Munich$endif$}
+\newcommand*{\getFaculty}{$if(faculty)$$faculty$$else$Department of Informatics$endif$}
 \newcommand*{\getTitle}{$title-en$}
 \newcommand*{\getTitleGer}{$title-de$}
 \newcommand*{\getAuthor}{$author$}
