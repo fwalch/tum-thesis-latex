@@ -26,11 +26,13 @@
 \usepackage{caption}
 \usepackage[hidelinks]{hyperref} % hidelinks removes colored boxes around references and links
 
-
 \bibliography{bibliography}
 
 \setkomafont{disposition}{\normalfont\bfseries} % use serif font for headings
 \linespread{1.05} % adjust line spread for mathpazo font
+
+% Add table of contents to PDF bookmarks
+\BeforeTOCHead[toc]{{\cleardoublepage\pdfbookmark[0]{\contentsname}{toc}}}
 
 % Settings for pgfplots
 \pgfplotsset{compat=newest}
