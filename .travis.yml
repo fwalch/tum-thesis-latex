@@ -1,7 +1,17 @@
+dist: trusty
 sudo: false
 
 script:
-  - test ! -f main.pdf && latexmk -pdf && test -f main.pdf
+  - make pdf
+
+deploy:
+  provider: releases
+  api_key:
+    secure: F2OON6aGgUfFCmlcKwczmlTy65PBGufmrSXWTAgNJvk3ANZCaK4m7T3vWcY0Jfzrq9YFbYMwnphGTCjKW2KsWgmBmULfz2MlkxOFyYqebA06dQXl+lrb/q9o7OqE0mfl/Nmxw412vGlQoBJ0eCdPbO8vYimqaqY1nib/Vdwg6G4=
+  file: build/main.pdf
+  on:
+    repo: fwalch/tum-thesis-latex
+    branch: travis
 
 addons:
   apt:
