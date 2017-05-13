@@ -26,11 +26,13 @@
 \usepackage{caption}
 \usepackage[hidelinks]{hyperref} % hidelinks removes colored boxes around references and links
 
-
 \bibliography{bibliography}
 
 \setkomafont{disposition}{\normalfont\bfseries} % use serif font for headings
 \linespread{1.05} % adjust line spread for mathpazo font
+
+% Add table of contents to PDF bookmarks
+\BeforeTOCHead[toc]{{\cleardoublepage\pdfbookmark[0]{\contentsname}{toc}}}
 
 % Define TUM corporate design colors
 % Taken from http://portal.mytum.de/corporatedesign/index_print/vorlagen/index_farben
@@ -49,7 +51,7 @@
 \definecolor{TUMAccentBlue}{HTML}{64A0C8}
 
 % Settings for pgfplots
-\pgfplotsset{compat=1.9} % TODO: adjust to your installed version
+\pgfplotsset{compat=newest}
 \pgfplotsset{
   % For available color names, see http://www.latextemplates.com/svgnames-colors
   cycle list={TUMBlue\\TUMAccentOrange\\TUMAccentGreen\\TUMSecondaryBlue2\\TUMDarkGray\\},
