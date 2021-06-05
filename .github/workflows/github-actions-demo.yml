@@ -1,0 +1,21 @@
+name: CI
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container: texlive/texlive:latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Build pdf
+      run: make pdf
+
+    - name: Upload pdf
+      uses: actions/upload-artifact@v2
+      with:
+        name: thesis
+        path: build/main.pdf
+        retention-days: 14
