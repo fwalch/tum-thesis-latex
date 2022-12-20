@@ -1,3 +1,5 @@
+**This template is no longer maintained. Use [TUM-Dev/tum-thesis-latex](https://github.com/TUM-Dev/tum-thesis-latex) instead.**
+
 # LaTeX template for TUM theses
 
 This is a LaTeX template created according to the guidelines for TUM informatics theses in SS 2013. **Always check the [current formatting guidelines][thesis-guidelines] before you hand in.** See [`build/main.pdf`][sample-pdf] for an example PDF created with this template.
